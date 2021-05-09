@@ -1,22 +1,12 @@
 import os
 
-#command = input("Welcome to TUtils. Enter a command: ")
-
-#if command() == "help"(
- #  print("help")
-#)
-
-
-welcomemsg = str("WELCOME TO TUTILS v0.0.1")
-print(str(welcomemsg))
-
-cmd = input("TYPE 'help' TO LIST AVAILABLE COMMANDS.\nEnter a command: ")
+cmd = input("TUtils: ")
 
 if str(cmd) == ("help"):
-   print('### Available Commands\n HELP: Displays this menu.')
-else:
-   print('Command not recognized.')
+   print('\n\n\n### Available Commands\nHELP: Displays this menu.\nLIST: Lists all files and subdirectories in current directory.')
 
+if str(cmd) == ('list'):
+   print(lsdir)
 
-#echo = input("Enter a word/string to be echoed: ")
-#print(str(echo))
+if str(cmd) == ('version'):
+   print("TUtils - v0.0.2\nCopyright 2021, Daniel P. Teberian. All rights reserved.")
